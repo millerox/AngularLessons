@@ -1,5 +1,12 @@
-<p>
-  form works!<br>
-  <label for="name">Enter your Name :</label>
-  <input type="text" id="name" name="name" size="10" required>
-</p>
+<div style="text-align:left">
+  <form class="jasmine-result">
+    <div>
+      <label for="name">Enter your full name : </label>
+      <input name="name" id="name" #inputNmae>
+    </div>
+    <br>
+    <div>
+      <button (click)="displayName(inputNmae)" >Submit Name</button>
+    </div>
+  </form>
+</div>
